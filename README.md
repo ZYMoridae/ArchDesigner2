@@ -1,2 +1,4 @@
-# ArchDesigner2
-This is for the archdesigner v2.0
+# GrailsArchDesigner
+
+
+run with commond, do not deploy with IntelliJ
