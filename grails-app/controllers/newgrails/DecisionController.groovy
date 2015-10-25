@@ -15,7 +15,11 @@ class DecisionController {
 
         def currentApp = newgrails.ArchApplication.findAll("from ArchApplication as c where c.user=:myuser", [myuser: session.user], [cache: true])
 
-        def tempDecision = newgrails.Decision.findAllByAppInList(currentApp)
+        def tempDecision = null;
+
+        if(currentApp.size()!=0){
+            tempDecision = newgrails.Decision.findAllByAppInList(currentApp)
+        }
 
         respond Decision.list(params), model:[decisionCount: Decision.count(), userDecision: tempDecision]
     }

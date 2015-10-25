@@ -13,7 +13,11 @@ class StakeholderController {
 
         def currentApp = newgrails.ArchApplication.findAll("from ArchApplication as c where c.user=:myuser", [myuser: session.user], [cache: true])
 
-        def tempStakeholder = newgrails.Stakeholder.findAllByAppInList(currentApp)
+        def tempStakeholder = null;
+
+        if (currentApp.size()!=0){
+            tempStakeholder = newgrails.Stakeholder.findAllByAppInList(currentApp)
+        }
 
         respond Stakeholder.list(params), model:[stakeholderCount: Stakeholder.count(), userStakeholder: tempStakeholder]
     }

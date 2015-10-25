@@ -104,10 +104,10 @@
                         <tr>
                             <td>First Name</td>
                             <td>Last Name</td>
-                            <td>Password</td>
-                            <td>User Level</td>
+                            %{--<td>Password</td>--}%
+                            %{--<td>User Level</td>--}%
                             <td>Email</td>
-                            <td>Remark</td>
+                            %{--<td>Remark</td>--}%
                             <td>Edit</td>
                             <td>Delete</td>
                         </tr>
@@ -117,10 +117,10 @@
                         <tr>
                             <td>${user.fname}</td>
                             <td>${user.lname}</td>
-                            <td>${user.userpwd}</td>
-                            <td>${user.userlevel}</td>
+                            %{--<td>${user.userpwd}</td>--}%
+                            %{--<td>${user.userlevel}</td>--}%
                             <td>${user.email}</td>
-                            <td>${user.remark}</td>
+                            %{--<td>${user.remark}</td>--}%
                             <td>
                                 <div class="ad-model-edit modal fade" id="myuserModal-${user.id}" tabindex="-1"
                                      role="dialog"

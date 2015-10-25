@@ -13,7 +13,11 @@ class AlternativeController {
 
         def currentApp = newgrails.ArchApplication.findAll("from ArchApplication as c where c.user=:myuser", [myuser: session.user], [cache: true])
 
-        def tempAlternative= newgrails.Alternative.findAllByAppInList(currentApp)
+        def tempAlternative = null;
+
+        if (currentApp.size()!=0){
+            tempAlternative= newgrails.Alternative.findAllByAppInList(currentApp)
+        }
 
         respond Alternative.list(params), model:[alternativeCount: Alternative.count(), userAlternative: tempAlternative]
     }

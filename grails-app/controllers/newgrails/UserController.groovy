@@ -133,7 +133,6 @@ class UserController {
             return
         }
 
-
         if (user == session.user){
             return
         }

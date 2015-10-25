@@ -17,7 +17,6 @@ class ScoreAlternativeController {
 
         def currentApp = newgrails.ArchApplication.findAll("from ArchApplication as c where c.user=:myuser", [myuser: session.user], [cache: true])
 
-
         respond ScoreAlternative.list(params), model:[scoreAlternativeCount: ScoreAlternative.count(), userApplication: currentApp]
     }
 

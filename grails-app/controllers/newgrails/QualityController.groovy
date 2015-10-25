@@ -13,7 +13,11 @@ class QualityController {
 
         def currentApp = newgrails.ArchApplication.findAll("from ArchApplication as c where c.user=:myuser", [myuser: session.user], [cache: true])
 
-        def tempQuality= newgrails.Quality.findAllByAppInList(currentApp)
+        def tempQuality = null;
+
+        if (currentApp.size()!=0){
+            tempQuality= newgrails.Quality.findAllByAppInList(currentApp)
+        }
 
         respond Quality.list(params), model:[qualityCount: Quality.count(), userQuality: tempQuality]
     }

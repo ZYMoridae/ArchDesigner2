@@ -71,9 +71,9 @@
                         </div>
 
 
-                        <div class="fieldcontain required"> <label for="${fieldLevel}">
+                        <div class="fieldcontain required" style="display: none;"> <label for="${fieldLevel}">
                             User level<span class="required-i\ndicator">*</span></label>
-                            <input class="form-control" type="text" name="${fieldLevel}" value="" required=""/>
+                            <input class="form-control" type="text" name="${fieldLevel}" value="2" required=""/>
                         </div>
 
 
@@ -82,9 +82,9 @@
                             <input class="form-control" type="email" name="${fieldEmail}" value="" required=""/>
                         </div>
 
-                        <div class="fieldcontain required"> <label for="${fieldRemark}">
+                        <div class="fieldcontain required" style="display: none;"> <label for="${fieldRemark}">
                             Remark<span class="required-i\ndicator">*</span></label>
-                            <input class="form-control" type="text" name="${fieldRemark}" value="" required=""/>
+                            <input class="form-control" type="text" name="${fieldRemark}" value="23" required=""/>
                         </div>
 
                     </fieldset>
