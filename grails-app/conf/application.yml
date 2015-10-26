@@ -79,7 +79,7 @@ dataSource:
     driverClassName: com.mysql.jdbc.Driver
     dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     url: jdbc:mysql://127.0.0.1:8889/grails
-    dbCreate: create-drop
+    dbCreate: update
     username: root
     password: root
 

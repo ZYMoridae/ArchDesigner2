@@ -22,13 +22,15 @@ class ScoreAlternativeController {
 
     def calculateScore() {
 
+
+
         //Step2. Calculate the quality pairwise
         def calApp = newgrails.ArchApplication.find("from ArchApplication as c where c.id=:myappname", [myappname: Long.valueOf(params.applicationid)], [cache: true])
 
 
         def targetPQL = newgrails.PairwiseQuality.findAll("from PairwiseQuality as c where c.app=:myapp", [myapp: calApp], [cache: true])
 
-        def qualityAL = Quality.getAll()
+        def qualityAL = newgrails.Quality.findAllByApp(calApp)
 
         double[][] qualityAttributes = new double[qualityAL.size()][qualityAL.size()];
 
@@ -57,6 +59,8 @@ class ScoreAlternativeController {
                 }
             }
         }
+
+
 
 //        def testresult1 = [testres: qualityAttributes]
 //        render testresult1 as JSON
@@ -126,6 +130,9 @@ class ScoreAlternativeController {
             }
         }
 
+
+
+
         //Computing the geometric mean alternative
         ArrayList<double[]> allGeometricMeanMatrix = new ArrayList<>();
 
@@ -133,6 +140,8 @@ class ScoreAlternativeController {
             double[] tempGeoMetricMean= new double[alternativeAL.size()];
             allGeometricMeanMatrix.add(tempGeoMetricMean);
         }
+
+
 
         for (int i = 0; i < allGeometricMeanMatrix.size(); i++) {
             for (int j = 0; j < allMatrix.get(i).length; j++) {
@@ -146,12 +155,18 @@ class ScoreAlternativeController {
         }
 
 
+
+
         //Computing the relative alternative
         ArrayList<double[]> allRelativeMatrix = new ArrayList<>();
         for (int i = 0; i < qualityAL.size(); i++) {
             double[] tempRelativeWeight= new double[alternativeAL.size()];
             allRelativeMatrix.add(tempRelativeWeight);
         }
+
+//        def finalData2 = [bestalter: allRelativeMatrix]
+//        render finalData2 as JSON
+
 
         for (int i = 0; i < allRelativeMatrix.size(); i++) {
             def sumRelativeWeight = 0
@@ -162,8 +177,6 @@ class ScoreAlternativeController {
                 allRelativeMatrix.get(i)[j] = allGeometricMeanMatrix.get(i)[j]/sumRelativeWeight
             }
         }
-
-
 
         //Step4. Computing Value Score & Choose highest score
         def decList = newgrails.Decision.getAll()
@@ -179,6 +192,7 @@ class ScoreAlternativeController {
             }
         }
 
+
         String bestAlternative = ""
         String bestDecision = ""
         Double currentBest = 0;
@@ -191,6 +205,7 @@ class ScoreAlternativeController {
                 }
             }
         }
+
 
         def finalData = [bestalter: bestAlternative, bestdec: bestDecision]
         render finalData as JSON
