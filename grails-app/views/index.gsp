@@ -78,7 +78,7 @@
     </head>
     <body>
        <div class="container" style="margin: 0px;">
-           <h1>Welcome to ArchDesigner!</h1>
+           <h1 style="font-size: 36px;font-weight: 100;">Welcome to ArchDesigner!</h1>
        </div>
     </body>
 </html>

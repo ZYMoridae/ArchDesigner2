@@ -22,8 +22,6 @@ class ScoreAlternativeController {
 
     def calculateScore() {
 
-
-
         //Step2. Calculate the quality pairwise
         def calApp = newgrails.ArchApplication.find("from ArchApplication as c where c.id=:myappname", [myappname: Long.valueOf(params.applicationid)], [cache: true])
 

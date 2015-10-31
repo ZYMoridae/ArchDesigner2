@@ -79,6 +79,7 @@
         </div>
     </div>
 
+<asset:javascript src="jquery.min.js"/>
 <script>
     $(document).ready(function(){
         $("form input").addClass("form-control");

@@ -82,4 +82,6 @@ dataSource:
     dbCreate: update
     username: root
     password: root
+    dbProperties:
+        autoReconnect: true
 

@@ -13,7 +13,11 @@ class PairwiseAlternativeController {
 
         def currentApp = newgrails.ArchApplication.findAll("from ArchApplication as c where c.user=:myuser", [myuser: session.user], [cache: true])
 
-        def tempPairwiseAlternative= newgrails.PairwiseAlternative.findAllByAppInList(currentApp)
+
+        def tempPairwiseAlternative = null
+        if (currentApp.size()!=0){
+            tempPairwiseAlternative= newgrails.PairwiseAlternative.findAllByAppInList(currentApp)
+        }
 
         respond PairwiseAlternative.list(params), model:[pairwiseAlternativeCount: PairwiseAlternative.count(), userAlternative: tempPairwiseAlternative, userApplication: currentApp]
     }

@@ -74,7 +74,6 @@
     }else{
         def targetApp = newgrails.ArchApplication.findAll("from ArchApplication as c where c.appName='" + session.user.id + "'")
         ArrayList<ArchApplication> userApplication = new ArrayList<>();
-        session.userapp = "123123123";
     }
 %>
 
@@ -223,9 +222,16 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="/combinationCentric/index">
-                            <i class="fa fa-cloud fa-fw"></i> Combination-Centric
-                        </a>
+                        <a href="#"><i class="fa fa-bar-chart fa-fw"></i> Analysis<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/combinationCentric/index">Decision-Centric</a>
+                            </li>
+                            <li>
+                                <a href="/combinationCentric/generate">Generate Report</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
                     </li>
                     <%
                         if(session.user != null && session.username == "admin"){
@@ -236,6 +242,11 @@
                     <%
                         }
                     %>
+                    <li>
+                        <a href="/404/">
+                            <i class="fa fa-tasks fa-fw"></i> Others
+                        </a>
+                    </li>
                 </ul>
             </div>
             <!-- /.sidebar-collapse -->
