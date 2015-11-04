@@ -158,7 +158,7 @@
         <ul class="nav navbar-top-links navbar-right">
             <li class="dropdown">
                 <div class="dropdown-toggle chover" data-toggle="dropdown" style="padding: 15px;" href="#">
-                    <i class="fa fa-user fa-fw" style="color:white;"></i>  <i class="fa fa-caret-down" style="color:white;"></i>
+                    <i class="fa fa-user fa-fw" style="color:white;"></i>
                 </div>
                 <ul class="dropdown-menu dropdown-user animated fadeIn">
                     <form action="/user/logout">
@@ -186,7 +186,7 @@
                                         %{--controller="${c.logicalPropertyName}">${c.name}</g:link></li>--}%
                             %{--</g:each>--}%
                             <li>
-                                <a href="/archApplication/index">Application</a>
+                                <a href="/archApplication/index">Application Profile</a>
                             </li>
                             <li>
                                 <a href="/stakeholder/index">Stakeholder</a>

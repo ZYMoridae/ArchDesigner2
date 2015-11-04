@@ -27,6 +27,18 @@
             font-size: 15px;
             font-weight: 100;
         }
+        body{
+            background: rgba(176,252,238,1);
+            background: -moz-linear-gradient(-45deg, rgba(176,252,238,1) 0%, rgba(178,219,191,1) 50%, rgba(238,245,206,1) 100%);
+            background: -webkit-linear-gradient(-45deg, rgba(176,252,238,1) 0%, rgba(178,219,191,1) 50%, rgba(238,245,206,1) 100%);
+            background: -o-linear-gradient(-45deg, rgba(176,252,238,1) 0%, rgba(178,219,191,1) 50%, rgba(238,245,206,1) 100%);
+            background: -ms-linear-gradient(-45deg, rgba(176,252,238,1) 0%, rgba(178,219,191,1) 50%, rgba(238,245,206,1) 100%);
+            background: linear-gradient(135deg, rgba(176,252,238,1) 0%, rgba(178,219,191,1) 50%, rgba(238,245,206,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0fcee', endColorstr='#eef5ce', GradientType=1 );
+        }
+        .panel{
+            border: none;
+        }
     </style>
 </head>
 

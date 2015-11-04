@@ -35,6 +35,7 @@ class UserController {
 
     @Transactional
     def registerUser(User user){
+
         if (user == null) {
             transactionStatus.setRollbackOnly()
             notFound()

@@ -1,6 +1,4 @@
 # GrailsArchDesigner
 
 
-Run with command, do not deploy with IntelliJ IDEA.
-
-```Command: grails run-app```
+run with commond, do not deploy with IntelliJ
