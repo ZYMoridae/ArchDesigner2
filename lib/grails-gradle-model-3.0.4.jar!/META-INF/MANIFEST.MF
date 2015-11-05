@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Built-By: travis
-Created-By: 24.76-b04 (Oracle Corporation)
-Implementation-Title: Grails
-Implementation-Version: 3.0.4
-Implementation-Vendor: grails.org
-
