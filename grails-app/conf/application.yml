@@ -12,11 +12,8 @@ spring:
     groovy:
         template:
             check-template-location: false
-grails:
-    serverURL: http://45.55.185.77:8080/
 ---
 grails:
-    serverURL: http://45.55.185.77:8080/
     mime:
         disable:
             accept:
