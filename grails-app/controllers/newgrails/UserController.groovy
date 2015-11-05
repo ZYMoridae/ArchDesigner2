@@ -27,7 +27,7 @@ class UserController {
         if (targetUser.size() == 1){
             session.user = targetUser.get(0)
             session.username = targetUser.get(0).fname
-            redirect(uri: "/")
+            redirect (uri: "/")
         }else{
             return
         }

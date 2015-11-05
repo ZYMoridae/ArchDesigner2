@@ -12,9 +12,11 @@ spring:
     groovy:
         template:
             check-template-location: false
-
+grails:
+    serverURL: http://45.55.185.77:8080/
 ---
 grails:
+    serverURL: http://45.55.185.77:8080/
     mime:
         disable:
             accept:
@@ -78,10 +80,9 @@ dataSource:
     jmxEnabled: false
     driverClassName: com.mysql.jdbc.Driver
     dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-    url: jdbc:mysql://127.0.0.1:8889/grails
+    url: jdbc:mysql://127.0.0.1:3306/grails
     dbCreate: update
     username: root
     password: root
     dbProperties:
         autoReconnect: true
-

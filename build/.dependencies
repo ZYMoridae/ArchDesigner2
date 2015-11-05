@@ -1,13 +1,13 @@
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.2.5.RELEASE/79df0d68a15dd5437010e46df1806482a7878e76/spring-boot-starter-logging-1.2.5.RELEASE.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/1.2.5.RELEASE/40bf8cebd6ce727abc1f671f9d7445f7f400a27d/spring-boot-starter-actuator-1.2.5.RELEASE.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.2.5.RELEASE/8f1ee1f5e37723dd0e2cd3b05c6fc9268798b93d/spring-boot-autoconfigure-1.2.5.RELEASE.jar
-file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.2.5.RELEASE/9ac1752cd1a81b227d5f37e547077518df15a624/spring-boot-starter-tomcat-1.2.5.RELEASE.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-boot/3.0.4/8c3b0b948d53f2bf3b62b8e14ac1fe230921e2d8/grails-web-boot-3.0.4.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails.plugins/hibernate/4.3.10.4/6eb1872a0db176b5bce2a61653a8faf11d4e916c/hibernate-4.3.10.4.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails.plugins/cache/3.0.1/7a360b62877f81907d9aa6f76b8019912d3a2031/cache-3.0.1.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-ehcache/4.3.10.Final/aa8096b4b71e232a61873e6b57753d633bcf41b8/hibernate-ehcache-4.3.10.Final.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails.plugins/scaffolding/3.1.0/3f0d2b678829576852713613e5afd0bbe84a2ca6/scaffolding-3.1.0.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails/grails-gradle-plugin/3.0.4/2c37320bb2a10feea84b8c2b07b9f03d7a80de4a/grails-gradle-plugin-3.0.4.jar
+file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.2.5.RELEASE/9ac1752cd1a81b227d5f37e547077518df15a624/spring-boot-starter-tomcat-1.2.5.RELEASE.jar
 file:/Users/alex/.m2/repository/mysql/mysql-connector-java/5.1.36/mysql-connector-java-5.1.36.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails.plugins/asset-pipeline/3.0.5/3a2ad9ed1157d220ebffbc3e742eb7f3a154949d/asset-pipeline-3.0.5.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-testing/3.0.4/8ab8e90d50d0b766b5256e36d1a9816dc94958d1/grails-plugin-testing-3.0.4.jar
@@ -22,10 +22,6 @@ file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spr
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.1.7.RELEASE/9f8e34eef228f44bda771c9dc62e9f1efa82c92d/spring-core-4.1.7.RELEASE.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.2.5.RELEASE/d12969adffe18f6f778451b1a8d1dab485ab4a03/spring-boot-1.2.5.RELEASE.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.14/c2df91929ed06a25001939929bff5120e0ea3fd4/snakeyaml-1.14.jar
-file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.0.23/79dc3aea4f447392ab0bdc1359c31a931cd307d6/tomcat-embed-core-8.0.23.jar
-file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.0.23/5a1ca084156665968232112b6606c0b259213aab/tomcat-embed-el-8.0.23.jar
-file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-logging-juli/8.0.23/2ec89b09cb0eb133a03d9f513474f99ff667b93b/tomcat-embed-logging-juli-8.0.23.jar
-file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.0.23/839167a26dec5dcef85fb19e2e429878b7215293/tomcat-embed-websocket-8.0.23.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails/grails-bootstrap/3.0.4/6549839ceee212fc48dbd978597da92b89f10f6a/grails-bootstrap-3.0.4.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-rest/3.0.4/3576ba541110b5f1812d855749c715a2a4e75016/grails-plugin-rest-3.0.4.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-databinding/3.0.4/20c872fb0514f295b6fd71155dde46a50b63412/grails-plugin-databinding-3.0.4.jar
@@ -49,6 +45,10 @@ file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails.plugins/fields/2.
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.grails/grails-gradle-model/3.0.4/6269c3321aaf0d9cc5d98bf8ebfbb415c0aad729/grails-gradle-model-3.0.4.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/1.2.5.RELEASE/ef47a558b65928a44eac01f8f59257c057d2fe04/spring-boot-gradle-plugin-1.2.5.RELEASE.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/gradle-extra-configurations-plugin/2.2.0/9fc509137e6b38f19c8d196aada610ece2c86d8e/gradle-extra-configurations-plugin-2.2.0.jar
+file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.0.23/79dc3aea4f447392ab0bdc1359c31a931cd307d6/tomcat-embed-core-8.0.23.jar
+file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.0.23/5a1ca084156665968232112b6606c0b259213aab/tomcat-embed-el-8.0.23.jar
+file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-logging-juli/8.0.23/2ec89b09cb0eb133a03d9f513474f99ff667b93b/tomcat-embed-logging-juli-8.0.23.jar
+file:/Users/alex/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.0.23/839167a26dec5dcef85fb19e2e429878b7215293/tomcat-embed-websocket-8.0.23.jar
 file:/Users/alex/.m2/repository/org/mozilla/rhino/1.7R4/rhino-1.7R4.jar
 file:/Users/alex/.gradle/caches/modules-2/files-2.1/com.bertramlabs.plugins/asset-pipeline-core/2.3.8/6757defa662b1c9e595030072cf0911c2bf86243/asset-pipeline-core-2.3.8.jar
 file:/Users/alex/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar
