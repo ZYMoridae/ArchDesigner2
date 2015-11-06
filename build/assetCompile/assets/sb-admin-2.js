@@ -1,4 +1,0 @@
-//# sourceMappingURL=sb-admin-2.js.map
-$(function(){$("#side-menu").metisMenu()});
-$(function(){$(window).bind("load resize",function(){topOffset=50;width=0<this.window.innerWidth?this.window.innerWidth:this.screen.width;768>width?($("div.navbar-collapse").addClass("collapse"),topOffset=100):$("div.navbar-collapse").removeClass("collapse");height=(0<this.window.innerHeight?this.window.innerHeight:this.screen.height)-1;height-=topOffset;1>height&&(height=1);height>topOffset&&$("#page-wrapper").css("min-height",height+"px")});var a=window.location,b=$("ul.nav a").filter(function(){return this.href==
-a||0==a.href.indexOf(this.href)}).addClass("active").parent().parent().addClass("in").parent();b.is("li")&&b.addClass("active")});

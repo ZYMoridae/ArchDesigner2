@@ -1,0 +1,1 @@
+nohup java -Dgrails.env=prod -jar /usr/share/GrailsArchDesigner/ArchDesigner2/GrailsArchDesigner-0.1.war &
